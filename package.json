@@ -6,7 +6,10 @@
   "scripts": {
     "test": "tsc --noEmit && prettier --check .",
     "dev": "vite",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build": "vite build",
+    "postinstall": "cd server && npm install",
+    "start": "cd server && npm start"
   },
   "repository": {
     "type": "git",
